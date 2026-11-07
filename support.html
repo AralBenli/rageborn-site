@@ -119,9 +119,16 @@
       <p>On the same Google Play or Apple account, restore purchases on the new device. To move your full progress, contact us from both devices' Settings → Feedback and we will link the saves.</p>
     </div>
 
-    <div class="panel">
+    <div class="panel delete">
       <h2>Delete my data</h2>
-      <p>Email us and we delete your cloud save, league ghost and statistics within 30 days. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+      <p>Rageborn has no sign-up; it creates an anonymous player account for you. To delete it and its data:</p>
+      <ul>
+        <li>Send a message from <b>Settings → Feedback</b> saying "delete my data" (it carries your Player ID), or email us from the button below.</li>
+        <li>We delete your anonymous account, cloud save, Pit League ghost and leaderboard entry and your feedback messages within 30 days, and confirm by email if you wrote to us. Analytics and crash data are not linked to your Player ID; Firebase deletes them automatically after its retention period.</li>
+        <li>Purchase records stay with Google Play or the App Store under their own rules. Uninstalling the game removes everything stored on the device.</li>
+      </ul>
+      <a class="mail" href="mailto:support@aralbenli.com?subject=Rageborn%20-%20delete%20my%20data">✉ Delete my data</a>
+      <p>Details are in the <a href="privacy.html">privacy policy</a>.</p>
     </div>
   </section>
 
@@ -167,9 +174,16 @@
       <p>Aynı Google Play veya Apple hesabıyla yeni cihazda satın alımları geri yükleyin. Tüm ilerlemenizi taşımak için iki cihazın Settings → Feedback bölümünden de bize yazın, kayıtları bağlayalım.</p>
     </div>
 
-    <div class="panel">
+    <div class="panel delete">
       <h2>Verilerimi sil</h2>
-      <p>Bize e-posta atın; bulut kaydınızı, lig hayaletinizi ve istatistiklerinizi 30 gün içinde silelim. Ayrıntılar <a href="privacy.html#tr">gizlilik politikasında</a>.</p>
+      <p>Rageborn'da kayıt yoktur; oyun sizin için anonim bir oyuncu hesabı oluşturur. Bu hesabı ve verilerini silmek için:</p>
+      <ul>
+        <li><b>Settings → Feedback</b>'ten "verilerimi sil" yazan bir mesaj gönderin (Oyuncu Kimliğiniz eklenir) ya da aşağıdaki düğmeyle bize e-posta atın.</li>
+        <li>Anonim hesabınızı, bulut kaydınızı, Pit League hayaletinizi, sıralama kaydınızı ve geri bildirim mesajlarınızı 30 gün içinde siler, e-postayla yazdıysanız onaylarız. Analitik ve çökme verileri Oyuncu Kimliğinize bağlı değildir; Firebase bunları saklama süresi dolunca kendiliğinden siler.</li>
+        <li>Satın alım kayıtları kendi kuralları altında Google Play veya App Store'da kalır. Oyunu kaldırmak cihazda saklanan her şeyi siler.</li>
+      </ul>
+      <a class="mail" href="mailto:support@aralbenli.com?subject=Rageborn%20-%20verilerimi%20sil">✉ Verilerimi sil</a>
+      <p>Ayrıntılar <a href="privacy.html#tr">gizlilik politikasında</a>.</p>
     </div>
   </section>
 
@@ -189,6 +203,11 @@
     var hash = location.hash.replace('#', '');
     var device = (navigator.language || 'en').slice(0, 2);
     show(hash === 'tr' || hash === 'en' ? hash : device === 'tr' ? 'tr' : 'en');
+    // #delete (the data deletion link) scrolls to that section in the shown language.
+    if (hash === 'delete') {
+      var target = document.querySelector('section:not([hidden]) .delete');
+      if (target) target.scrollIntoView();
+    }
   })();
 </script>
 </body>

@@ -96,24 +96,24 @@
 
     <div class="panel">
       <h2>Cloud save</h2>
-      <p>When you first open the game, an anonymous account is created with Google Firebase Authentication. Your progress (Glory, unlocked heroes and skins, mastery, campaign stars, Battle Pass and league progress, decks and settings) is stored on your device and copied to Google Cloud Firestore under that anonymous ID, so it can be restored and kept in step between devices. The ID is not linked to your name or email.</p>
+      <p>When you first open the game, an anonymous account is created with Google Firebase Authentication. Your progress is stored on your device, and a summary of it (Glory, unlocked heroes and items, mastery, campaign stars and Battle Pass XP) is copied to Google Cloud Firestore under that anonymous ID, so it can be restored and kept in step between devices. The ID is not linked to your name or email.</p>
     </div>
 
     <div class="panel">
       <h2>Pit League</h2>
-      <p>To let other players fight your team, the game publishes a "ghost": your team, deck, skins, title and card frame, your rating and a randomly generated name. Other players see it as an opponent and on the leaderboard. Results of fights against your ghost are stored so you can see how it defended. No real name or contact detail is ever part of a ghost.</p>
+      <p>To let other players fight your team, the game publishes a "ghost": your team, deck and cards, skins, your play style (for example aggressive or defensive), your rating and a randomly generated name. Your leaderboard entry holds that name, your rating, wins and lead champion. When you fight someone's ghost, your anonymous ID, your generated name and the result are stored so its owner can see how it defended. No real name or contact detail is ever part of a ghost.</p>
     </div>
 
     <div class="panel">
       <h2>Statistics and crash reports</h2>
-      <p>We use Google Firebase Analytics to learn which screens and modes are used and where players get stuck. It records events such as a screen opened, a match started or finished, a hero unlocked, a reward claimed or an ad watched. Firebase also collects standard technical data: an app-instance identifier, device model, operating system and app version, language and approximate country.</p>
-      <p>Firebase Crashlytics sends a crash report (device state and the code that failed) when the game crashes, so we can fix it.</p>
+      <p>We use Google Firebase Analytics to learn which screens and modes are used and where players get stuck. It records events such as a screen opened, a match started or finished, a hero unlocked, a reward claimed, an ad watched, a purchase started or completed (with the product), or a promotion for our other apps shown or tapped. It also keeps a few properties of your profile: how many heroes you own, campaign stars, Battle Pass level and whether you have made a purchase. Firebase also collects standard technical data: an app-instance identifier, device model, operating system and app version, language and approximate country.</p>
+      <p>Firebase Crashlytics sends a crash report (device state and the code that failed) when the game crashes, so we can fix it. It includes the last game events and the profile properties above, and handled problems are reported the same way.</p>
     </div>
 
     <div class="panel">
       <h2>Advertising</h2>
       <p>The game shows rewarded ads that you choose to watch (for example for double Glory or an extra Gauntlet life), served by Google AdMob. AdMob may use your device's advertising identifier and similar data to show and measure ads. In the EEA, the UK and Switzerland, you are asked for consent first through Google's consent message, and you can change your choice later. Buying <b>No Ads</b> removes ads.</p>
-      <p>The home screen can also show promotions for our own other apps. These come from our configuration and use no advertising identifier.</p>
+      <p>The home screen can also show promotions for our own other apps. They are loaded from Firebase Remote Config, which receives a random installation identifier created by the game, and use no advertising identifier. Showing or tapping one is counted in Firebase Analytics as described above.</p>
     </div>
 
     <div class="panel">
@@ -141,7 +141,7 @@
       <ul>
         <li>Ad consent can be changed through the consent message; personalized ads can also be limited in your device settings.</li>
         <li>Uninstalling the game removes everything stored on the device.</li>
-        <li>To have your cloud save, ghost and statistics deleted, write to us with your Player ID (it is sent along with any feedback, or we can find it from your message). We delete them within 30 days.</li>
+        <li>To have your anonymous account, cloud save, ghost, leaderboard entry and feedback deleted, write to us with your Player ID (it is sent along with any feedback, or we can find it from your message). We delete them within 30 days. Analytics and crash data are not linked to your Player ID; Firebase deletes them automatically after its retention period. How to ask is also on the <a href="support.html#delete">support page</a>.</li>
       </ul>
     </div>
 
@@ -171,24 +171,24 @@
 
     <div class="panel">
       <h2>Bulut kayıt</h2>
-      <p>Oyunu ilk açtığınızda Google Firebase Authentication ile anonim bir hesap oluşturulur. İlerlemeniz (Glory, açılan kahramanlar ve kostümler, ustalık, kampanya yıldızları, Battle Pass ve lig ilerlemesi, desteler ve ayarlar) cihazınızda saklanır ve geri yüklenebilmesi, cihazlar arasında eşitlenebilmesi için bu anonim kimlikle Google Cloud Firestore'a kopyalanır. Bu kimlik adınız veya e-postanızla ilişkilendirilmez.</p>
+      <p>Oyunu ilk açtığınızda Google Firebase Authentication ile anonim bir hesap oluşturulur. İlerlemeniz cihazınızda saklanır; geri yüklenebilmesi ve cihazlar arasında eşitlenebilmesi için özeti (Glory, açılan kahramanlar ve öğeler, ustalık, kampanya yıldızları ve Battle Pass XP'si) bu anonim kimlikle Google Cloud Firestore'a kopyalanır. Bu kimlik adınız veya e-postanızla ilişkilendirilmez.</p>
     </div>
 
     <div class="panel">
       <h2>Pit League</h2>
-      <p>Diğer oyuncuların takımınızla savaşabilmesi için oyun bir "hayalet" yayımlar: takımınız, desteniz, kostümleriniz, unvanınız ve kart çerçeveniz, puanınız ve rastgele üretilmiş bir ad. Diğer oyuncular bunu rakip olarak ve sıralamada görür. Hayaletinize karşı yapılan dövüşlerin sonuçları, nasıl savunduğunu görebilmeniz için saklanır. Bir hayalette gerçek ad veya iletişim bilgisi hiçbir zaman yer almaz.</p>
+      <p>Diğer oyuncuların takımınızla savaşabilmesi için oyun bir "hayalet" yayımlar: takımınız, desteniz ve kartlarınız, kostümleriniz, oyun tarzınız (ör. saldırgan veya savunmacı), puanınız ve rastgele üretilmiş bir ad. Sıralama kaydınızda bu ad, puanınız, galibiyetleriniz ve lider şampiyonunuz yer alır. Birinin hayaletiyle dövüştüğünüzde, sahibinin hayaletinin nasıl savunduğunu görebilmesi için anonim kimliğiniz, üretilmiş adınız ve sonuç saklanır. Bir hayalette gerçek ad veya iletişim bilgisi hiçbir zaman yer almaz.</p>
     </div>
 
     <div class="panel">
       <h2>İstatistikler ve çökme raporları</h2>
-      <p>Hangi ekranların ve modların kullanıldığını, oyuncuların nerede takıldığını anlamak için Google Firebase Analytics kullanırız. Ekran açılması, maç başlaması veya bitmesi, kahraman açılması, ödül alınması veya reklam izlenmesi gibi olaylar kaydedilir. Firebase ayrıca standart teknik verileri toplar: uygulama örneği kimliği, cihaz modeli, işletim sistemi ve uygulama sürümü, dil ve yaklaşık ülke.</p>
-      <p>Oyun çöktüğünde, düzeltebilmemiz için Firebase Crashlytics bir çökme raporu (cihaz durumu ve hata veren kod) gönderir.</p>
+      <p>Hangi ekranların ve modların kullanıldığını, oyuncuların nerede takıldığını anlamak için Google Firebase Analytics kullanırız. Ekran açılması, maç başlaması veya bitmesi, kahraman açılması, ödül alınması, reklam izlenmesi, satın almanın başlaması veya tamamlanması (ürünle birlikte) ya da diğer uygulamalarımızın tanıtımının gösterilmesi veya ona dokunulması gibi olaylar kaydedilir. Profilinizin birkaç özelliği de tutulur: sahip olduğunuz kahraman sayısı, kampanya yıldızları, Battle Pass seviyesi ve satın alım yapıp yapmadığınız. Firebase ayrıca standart teknik verileri toplar: uygulama örneği kimliği, cihaz modeli, işletim sistemi ve uygulama sürümü, dil ve yaklaşık ülke.</p>
+      <p>Oyun çöktüğünde, düzeltebilmemiz için Firebase Crashlytics bir çökme raporu (cihaz durumu ve hata veren kod) gönderir. Rapor son oyun olaylarını ve yukarıdaki profil özelliklerini içerir; yakalanan sorunlar da aynı şekilde bildirilir.</p>
     </div>
 
     <div class="panel">
       <h2>Reklamlar</h2>
       <p>Oyun, izlemeyi kendinizin seçtiği ödüllü reklamlar gösterir (ör. çift Glory veya ekstra Gauntlet canı); bunları Google AdMob sunar. AdMob, reklamları göstermek ve ölçmek için cihazınızın reklam kimliğini ve benzeri verileri kullanabilir. AEA, Birleşik Krallık ve İsviçre'de önce Google'ın izin mesajıyla onayınız istenir ve seçiminizi sonradan değiştirebilirsiniz. <b>No Ads</b> satın almak reklamları kaldırır.</p>
-      <p>Ana ekranda kendi diğer uygulamalarımızın tanıtımları da görünebilir. Bunlar kendi yapılandırmamızdan gelir ve reklam kimliği kullanmaz.</p>
+      <p>Ana ekranda kendi diğer uygulamalarımızın tanıtımları da görünebilir. Bunlar Firebase Remote Config'ten yüklenir (oyunun ürettiği rastgele bir kurulum kimliği gönderilir) ve reklam kimliği kullanmaz. Gösterilmeleri ve onlara dokunulması yukarıda anlatıldığı gibi Firebase Analytics'te sayılır.</p>
     </div>
 
     <div class="panel">
@@ -216,7 +216,7 @@
       <ul>
         <li>Reklam izni, izin mesajından değiştirilebilir; kişiselleştirilmiş reklamlar cihaz ayarlarından da sınırlanabilir.</li>
         <li>Oyunu kaldırmak, cihazda saklanan her şeyi siler.</li>
-        <li>Bulut kaydınızın, hayaletinizin ve istatistiklerinizin silinmesi için Oyuncu Kimliğinizle bize yazın (her geri bildirimle birlikte gönderilir; mesajınızdan da bulabiliriz). 30 gün içinde sileriz.</li>
+        <li>Anonim hesabınızın, bulut kaydınızın, hayaletinizin, sıralama kaydınızın ve geri bildirimlerinizin silinmesi için Oyuncu Kimliğinizle bize yazın (her geri bildirimle birlikte gönderilir; mesajınızdan da bulabiliriz). 30 gün içinde sileriz. Analitik ve çökme verileri Oyuncu Kimliğinize bağlı değildir; Firebase bunları saklama süresi dolunca kendiliğinden siler. Nasıl isteneceği <a href="support.html#delete">destek sayfasında</a> da yazıyor.</li>
       </ul>
     </div>
 
