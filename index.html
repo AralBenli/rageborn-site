@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Rageborn</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;800&display=swap">
+<style>
+  :root {
+    --bg: #05030a; --iron: #1a0f12; --iron-top: #2c1a1c; --edge: #5a3a32;
+    --molten: #ff6a1a; --ember: #ffc14a; --gold: #ffe2a8; --crimson: #c0182a;
+    --text: #f2ebdd; --muted: #9a93a8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-image:
+      radial-gradient(120% 60% at 50% -10%, rgba(255,106,26,.22), transparent 60%),
+      radial-gradient(80% 40% at 50% 110%, rgba(192,24,42,.18), transparent 70%);
+    background-attachment: fixed; min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { text-align: center; margin-bottom: 22px; }
+  .logo { width: 76px; height: 76px; border-radius: 18px; border: 2px solid var(--molten); box-shadow: 0 0 26px rgba(255,106,26,.4); margin-bottom: 12px; }
+  .crest {
+    font: 900 40px/1 Cinzel, Georgia, serif; letter-spacing: 4px; margin: 0;
+    background: linear-gradient(180deg, var(--gold), var(--ember) 45%, var(--molten));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 28px rgba(255,106,26,.35);
+  }
+  .sub { color: var(--ember); font-weight: 800; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; margin-top: 8px; }
+  .tabs { display: flex; gap: 10px; justify-content: center; margin: 18px 0 6px; }
+  .tabs button {
+    font: 800 12px Inter, sans-serif; letter-spacing: 1.5px; color: var(--muted); cursor: pointer;
+    background: var(--iron); border: 1px solid var(--edge); border-radius: 10px; padding: 9px 18px;
+  }
+  .tabs button[aria-selected="true"] { color: var(--gold); border: 2px solid var(--molten); background: var(--iron-top); }
+  section[hidden] { display: none; }
+  .panel {
+    background: linear-gradient(180deg, rgba(44,26,28,.92), rgba(26,15,18,.92));
+    border: 1px solid var(--edge); border-radius: 16px; padding: 18px 18px 6px; margin: 14px 0;
+  }
+  .tldr { border: 1.5px solid var(--molten); box-shadow: 0 0 22px rgba(255,106,26,.18); }
+  h2 { font: 700 18px Cinzel, Georgia, serif; color: var(--ember); letter-spacing: 1.5px; margin: 0 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 12px; }
+  ul { padding-left: 20px; margin: 6px 0 14px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 14px; font-size: 14px; }
+  td { padding: 8px 6px; border-bottom: 1px solid rgba(90,58,50,.6); vertical-align: top; }
+  td:first-child { color: var(--muted); width: 46%; }
+  td:last-child { font-weight: 600; }
+  a { color: var(--ember); }
+  .mail {
+    display: inline-block; margin: 4px 0 16px; padding: 12px 18px; border-radius: 12px; text-decoration: none;
+    font-weight: 800; letter-spacing: 1px; color: #fff;
+    background: linear-gradient(180deg, var(--molten), var(--crimson));
+  }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="icon.png" alt="">
+    <h1 class="crest">RAGEBORN</h1>
+    <div class="sub">Tactical card duels</div>
+  </header>
+  <div class="panel tldr">
+    <h2>Forge your team. Fight with rage.</h2>
+    <p>Field three champions from a roster of 100, draft a card each turn, spend energy on support cards and swaps, then strike. Class counters, rage-bar ultimates and team synergies decide every duel.</p>
+    <p><a class="mail" href="support.html">Support</a> &nbsp; <a class="mail" href="privacy.html">Privacy Policy</a></p>
+  </div>
+  <footer>© 2026 Aral Benli · Rageborn · <a href="mailto:support@aralbenli.com">support@aralbenli.com</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Rageborn · Support</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;800&display=swap">
+<style>
+  :root {
+    --bg: #05030a; --iron: #1a0f12; --iron-top: #2c1a1c; --edge: #5a3a32;
+    --molten: #ff6a1a; --ember: #ffc14a; --gold: #ffe2a8; --crimson: #c0182a;
+    --text: #f2ebdd; --muted: #9a93a8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-image:
+      radial-gradient(120% 60% at 50% -10%, rgba(255,106,26,.22), transparent 60%),
+      radial-gradient(80% 40% at 50% 110%, rgba(192,24,42,.18), transparent 70%);
+    background-attachment: fixed; min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { text-align: center; margin-bottom: 22px; }
+  .logo { width: 76px; height: 76px; border-radius: 18px; border: 2px solid var(--molten); box-shadow: 0 0 26px rgba(255,106,26,.4); margin-bottom: 12px; }
+  .crest {
+    font: 900 40px/1 Cinzel, Georgia, serif; letter-spacing: 4px; margin: 0;
+    background: linear-gradient(180deg, var(--gold), var(--ember) 45%, var(--molten));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 28px rgba(255,106,26,.35);
+  }
+  .sub { color: var(--ember); font-weight: 800; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; margin-top: 8px; }
+  .tabs { display: flex; gap: 10px; justify-content: center; margin: 18px 0 6px; }
+  .tabs button {
+    font: 800 12px Inter, sans-serif; letter-spacing: 1.5px; color: var(--muted); cursor: pointer;
+    background: var(--iron); border: 1px solid var(--edge); border-radius: 10px; padding: 9px 18px;
+  }
+  .tabs button[aria-selected="true"] { color: var(--gold); border: 2px solid var(--molten); background: var(--iron-top); }
+  section[hidden] { display: none; }
+  .panel {
+    background: linear-gradient(180deg, rgba(44,26,28,.92), rgba(26,15,18,.92));
+    border: 1px solid var(--edge); border-radius: 16px; padding: 18px 18px 6px; margin: 14px 0;
+  }
+  .tldr { border: 1.5px solid var(--molten); box-shadow: 0 0 22px rgba(255,106,26,.18); }
+  h2 { font: 700 18px Cinzel, Georgia, serif; color: var(--ember); letter-spacing: 1.5px; margin: 0 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 12px; }
+  ul { padding-left: 20px; margin: 6px 0 14px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 14px; font-size: 14px; }
+  td { padding: 8px 6px; border-bottom: 1px solid rgba(90,58,50,.6); vertical-align: top; }
+  td:first-child { color: var(--muted); width: 46%; }
+  td:last-child { font-weight: 600; }
+  a { color: var(--ember); }
+  .mail {
+    display: inline-block; margin: 4px 0 16px; padding: 12px 18px; border-radius: 12px; text-decoration: none;
+    font-weight: 800; letter-spacing: 1px; color: #fff;
+    background: linear-gradient(180deg, var(--molten), var(--crimson));
+  }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="icon.png" alt="">
+    <h1 class="crest">RAGEBORN</h1>
+    <div class="sub" id="subtitle">Support</div>
+    <div class="tabs" role="tablist">
+      <button role="tab" data-lang="en" aria-selected="true">ENGLISH</button>
+      <button role="tab" data-lang="tr" aria-selected="false">TÜRKÇE</button>
+    </div>
+  </header>
+
+  <section lang="en" data-lang="en" data-title="Support">
+    <div class="panel tldr">
+      <h2>Need a hand, champion?</h2>
+      <p>The fastest way to reach us is in the game: <b>Settings → Feedback</b>. Pick <i>Report a bug</i> or <i>Request a feature</i>, write a title and the details and press Send. Your device details go along automatically, so we can help without asking twice.</p>
+      <p>Or write to us directly; we answer within two working days.</p>
+      <a class="mail" href="mailto:support@aralbenli.com?subject=Rageborn%20support">✉ support@aralbenli.com</a>
+    </div>
+
+    <div class="panel">
+      <h2>How do I play?</h2>
+      <p>Field a team of three champions. Each turn, keep one card from the draft offer, spend energy (2 a turn, up to 4 stored) on support cards and swaps, then strike. Class counters, rage-bar ultimates and team synergies decide the fight. Knock out all three enemy champions to win.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Is my progress saved?</h2>
+      <p>Yes. Progress is saved on your device and backed up to the cloud automatically, without an account. It syncs at launch and whenever you return to the home screen. The status on the home screen shows whether the last sync succeeded.</p>
+    </div>
+
+    <div class="panel">
+      <h2>I bought something but don't have it</h2>
+      <ul>
+        <li>Open the <b>Store</b> and tap <b>Restore purchases</b>, signed in to the same Google Play / Apple account you paid with.</li>
+        <li>Check your connection and restart the game.</li>
+        <li>Still missing? Send feedback from Settings (it includes your Player ID) or email us with the order number and we will grant it.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Refunds</h2>
+      <p>Payments are processed by Google Play or the App Store, so refunds are requested there: <a href="https://support.google.com/googleplay/answer/2479637">Google Play refunds</a> · <a href="https://reportaproblem.apple.com/">Apple: Report a Problem</a>.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Ads</h2>
+      <p>Rageborn only shows ads you choose to watch for a reward. If a rewarded ad doesn't load, try again in a moment; the reward is given only when the ad finishes. <b>No Ads</b> in the Store removes them for good.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Moving to a new phone</h2>
+      <p>On the same Google Play or Apple account, restore purchases on the new device. To move your full progress, contact us from both devices' Settings → Feedback and we will link the saves.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Delete my data</h2>
+      <p>Email us and we delete your cloud save, league ghost and statistics within 30 days. Details are in the <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <section lang="tr" data-lang="tr" data-title="Destek" hidden>
+    <div class="panel tldr">
+      <h2>Yardım mı lazım, şampiyon?</h2>
+      <p>Bize ulaşmanın en hızlı yolu oyunun içinden: <b>Settings → Feedback</b>. <i>Report a bug</i> veya <i>Request a feature</i> seçin, bir başlık ve ayrıntıları yazıp Send'e basın. Cihaz bilgileriniz otomatik eklenir, böylece tekrar sormadan yardımcı olabiliriz.</p>
+      <p>Ya da doğrudan yazın; iki iş günü içinde yanıtlarız.</p>
+      <a class="mail" href="mailto:support@aralbenli.com?subject=Rageborn%20destek">✉ support@aralbenli.com</a>
+    </div>
+
+    <div class="panel">
+      <h2>Nasıl oynanır?</h2>
+      <p>Üç şampiyonluk bir takım kurun. Her tur teklif edilen kartlardan birini tutun, enerjinizi (turda 2, en fazla 4 birikir) destek kartlarına ve değişimlere harcayın, sonra saldırın. Sınıf üstünlükleri, öfke barı ultileri ve takım sinerjileri dövüşü belirler. Kazanmak için rakibin üç şampiyonunu da nakavt edin.</p>
+    </div>
+
+    <div class="panel">
+      <h2>İlerlemem kaydediliyor mu?</h2>
+      <p>Evet. İlerleme cihazınızda saklanır ve hesap gerekmeden otomatik olarak buluta yedeklenir. Açılışta ve ana ekrana her dönüşte eşitlenir. Ana ekrandaki durum, son eşitlemenin başarılı olup olmadığını gösterir.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Satın aldım ama görünmüyor</h2>
+      <ul>
+        <li><b>Store</b>'u açıp <b>Restore purchases</b>'a dokunun; ödemeyi yaptığınız Google Play / Apple hesabıyla giriş yapmış olun.</li>
+        <li>Bağlantınızı kontrol edip oyunu yeniden başlatın.</li>
+        <li>Hâlâ yoksa Settings'ten geri bildirim gönderin (Oyuncu Kimliğiniz eklenir) veya sipariş numarasıyla bize e-posta atın, tanımlayalım.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>İadeler</h2>
+      <p>Ödemeler Google Play veya App Store tarafından işlendiği için iade oradan istenir: <a href="https://support.google.com/googleplay/answer/2479637?hl=tr">Google Play iadeleri</a> · <a href="https://reportaproblem.apple.com/">Apple: Sorun Bildir</a>.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Reklamlar</h2>
+      <p>Rageborn yalnızca ödül için izlemeyi seçtiğiniz reklamları gösterir. Ödüllü reklam yüklenmezse biraz sonra tekrar deneyin; ödül yalnızca reklam bittiğinde verilir. Store'daki <b>No Ads</b> reklamları kalıcı olarak kaldırır.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Yeni telefona geçiş</h2>
+      <p>Aynı Google Play veya Apple hesabıyla yeni cihazda satın alımları geri yükleyin. Tüm ilerlemenizi taşımak için iki cihazın Settings → Feedback bölümünden de bize yazın, kayıtları bağlayalım.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Verilerimi sil</h2>
+      <p>Bize e-posta atın; bulut kaydınızı, lig hayaletinizi ve istatistiklerinizi 30 gün içinde silelim. Ayrıntılar <a href="privacy.html#tr">gizlilik politikasında</a>.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Aral Benli · Rageborn · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></footer>
+</div>
+<script>
+  // The language comes from the URL hash (#tr / #en), then the device; English otherwise.
+  (function () {
+    var tabs = document.querySelectorAll('.tabs button');
+    var sections = document.querySelectorAll('section[data-lang]');
+    function show(lang) {
+      sections.forEach(function (s) { s.hidden = s.dataset.lang !== lang; if (!s.hidden) document.getElementById('subtitle').textContent = s.dataset.title; });
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', t.dataset.lang === lang); });
+      document.documentElement.lang = lang;
+    }
+    tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.dataset.lang); }); });
+    var hash = location.hash.replace('#', '');
+    var device = (navigator.language || 'en').slice(0, 2);
+    show(hash === 'tr' || hash === 'en' ? hash : device === 'tr' ? 'tr' : 'en');
+  })();
+</script>
+</body>
+</html>

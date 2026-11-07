@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Rageborn · Privacy Policy</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;800&display=swap">
+<style>
+  :root {
+    --bg: #05030a; --iron: #1a0f12; --iron-top: #2c1a1c; --edge: #5a3a32;
+    --molten: #ff6a1a; --ember: #ffc14a; --gold: #ffe2a8; --crimson: #c0182a;
+    --text: #f2ebdd; --muted: #9a93a8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-image:
+      radial-gradient(120% 60% at 50% -10%, rgba(255,106,26,.22), transparent 60%),
+      radial-gradient(80% 40% at 50% 110%, rgba(192,24,42,.18), transparent 70%);
+    background-attachment: fixed; min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { text-align: center; margin-bottom: 22px; }
+  .logo { width: 76px; height: 76px; border-radius: 18px; border: 2px solid var(--molten); box-shadow: 0 0 26px rgba(255,106,26,.4); margin-bottom: 12px; }
+  .crest {
+    font: 900 40px/1 Cinzel, Georgia, serif; letter-spacing: 4px; margin: 0;
+    background: linear-gradient(180deg, var(--gold), var(--ember) 45%, var(--molten));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 28px rgba(255,106,26,.35);
+  }
+  .sub { color: var(--ember); font-weight: 800; letter-spacing: 3px; font-size: 12px; text-transform: uppercase; margin-top: 8px; }
+  .tabs { display: flex; gap: 10px; justify-content: center; margin: 18px 0 6px; }
+  .tabs button {
+    font: 800 12px Inter, sans-serif; letter-spacing: 1.5px; color: var(--muted); cursor: pointer;
+    background: var(--iron); border: 1px solid var(--edge); border-radius: 10px; padding: 9px 18px;
+  }
+  .tabs button[aria-selected="true"] { color: var(--gold); border: 2px solid var(--molten); background: var(--iron-top); }
+  section[hidden] { display: none; }
+  .panel {
+    background: linear-gradient(180deg, rgba(44,26,28,.92), rgba(26,15,18,.92));
+    border: 1px solid var(--edge); border-radius: 16px; padding: 18px 18px 6px; margin: 14px 0;
+  }
+  .tldr { border: 1.5px solid var(--molten); box-shadow: 0 0 22px rgba(255,106,26,.18); }
+  h2 { font: 700 18px Cinzel, Georgia, serif; color: var(--ember); letter-spacing: 1.5px; margin: 0 0 8px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 12px; }
+  ul { padding-left: 20px; margin: 6px 0 14px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 4px 0 14px; font-size: 14px; }
+  td { padding: 8px 6px; border-bottom: 1px solid rgba(90,58,50,.6); vertical-align: top; }
+  td:first-child { color: var(--muted); width: 46%; }
+  td:last-child { font-weight: 600; }
+  a { color: var(--ember); }
+  .mail {
+    display: inline-block; margin: 4px 0 16px; padding: 12px 18px; border-radius: 12px; text-decoration: none;
+    font-weight: 800; letter-spacing: 1px; color: #fff;
+    background: linear-gradient(180deg, var(--molten), var(--crimson));
+  }
+  footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 26px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="logo" src="icon.png" alt="">
+    <h1 class="crest">RAGEBORN</h1>
+    <div class="sub" id="subtitle">Privacy Policy</div>
+    <div class="tabs" role="tablist">
+      <button role="tab" data-lang="en" aria-selected="true">ENGLISH</button>
+      <button role="tab" data-lang="tr" aria-selected="false">TÜRKÇE</button>
+    </div>
+  </header>
+
+  <section lang="en" data-lang="en" data-title="Privacy Policy">
+    <p class="muted">Last updated: 7 November 2026</p>
+    <p>Rageborn is a tactical card duel game made by Aral Benli ("we"). This policy explains what the game does with your information.</p>
+
+    <div class="panel tldr">
+      <h2>In short</h2>
+      <table>
+        <tr><td>👤 Account</td><td>None. An anonymous player ID is created for you.</td></tr>
+        <tr><td>☁️ Cloud save</td><td>Your game progress, under that anonymous ID</td></tr>
+        <tr><td>⚔️ Pit League</td><td>Your team, deck and a generated name (e.g. Vex#4821)</td></tr>
+        <tr><td>📊 Statistics &amp; crashes</td><td>Firebase Analytics and Crashlytics</td></tr>
+        <tr><td>📺 Ads</td><td>Google AdMob, with your consent where required</td></tr>
+        <tr><td>💳 Payments</td><td>Handled by Google Play / the App Store</td></tr>
+      </table>
+      <p>We never ask for your name, email address, contacts, location or photos.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Cloud save</h2>
+      <p>When you first open the game, an anonymous account is created with Google Firebase Authentication. Your progress (Glory, unlocked heroes and skins, mastery, campaign stars, Battle Pass and league progress, decks and settings) is stored on your device and copied to Google Cloud Firestore under that anonymous ID, so it can be restored and kept in step between devices. The ID is not linked to your name or email.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Pit League</h2>
+      <p>To let other players fight your team, the game publishes a "ghost": your team, deck, skins, title and card frame, your rating and a randomly generated name. Other players see it as an opponent and on the leaderboard. Results of fights against your ghost are stored so you can see how it defended. No real name or contact detail is ever part of a ghost.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Statistics and crash reports</h2>
+      <p>We use Google Firebase Analytics to learn which screens and modes are used and where players get stuck. It records events such as a screen opened, a match started or finished, a hero unlocked, a reward claimed or an ad watched. Firebase also collects standard technical data: an app-instance identifier, device model, operating system and app version, language and approximate country.</p>
+      <p>Firebase Crashlytics sends a crash report (device state and the code that failed) when the game crashes, so we can fix it.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Advertising</h2>
+      <p>The game shows rewarded ads that you choose to watch (for example for double Glory or an extra Gauntlet life), served by Google AdMob. AdMob may use your device's advertising identifier and similar data to show and measure ads. In the EEA, the UK and Switzerland, you are asked for consent first through Google's consent message, and you can change your choice later. Buying <b>No Ads</b> removes ads.</p>
+      <p>The home screen can also show promotions for our own other apps. These come from our configuration and use no advertising identifier.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Feedback</h2>
+      <p>If you send a feature request or bug report from Settings → Feedback, we receive what you wrote together with technical details that help us answer it: app version, platform, device model and OS version, a device identifier, language, time zone, sound settings, your anonymous player ID, owned purchases, an install ID, your approximate country and, for bug reports, a short summary of your progress. These are used only to handle your message.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Purchases</h2>
+      <p>All payments are handled by Google Play or the App Store. We never receive your card or payment details; we only learn which product was bought, so we can unlock it.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Service providers</h2>
+      <p>Google (Firebase, AdMob), Google Play and Apple process data on our behalf under their own terms: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>, <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. Feedback is delivered through a Cloudflare Worker to our support mailbox. We do not sell your data.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Children</h2>
+      <p>Rageborn is not directed at children under 13, and we do not knowingly collect information from them. If you believe a child has sent us information, contact us and we will delete it.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Your choices and deleting data</h2>
+      <ul>
+        <li>Ad consent can be changed through the consent message; personalized ads can also be limited in your device settings.</li>
+        <li>Uninstalling the game removes everything stored on the device.</li>
+        <li>To have your cloud save, ghost and statistics deleted, write to us with your Player ID (it is sent along with any feedback, or we can find it from your message). We delete them within 30 days.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Changes and contact</h2>
+      <p>If this policy changes, the new version is published at this address with a new date.</p>
+      <a class="mail" href="mailto:support@aralbenli.com">✉ support@aralbenli.com</a>
+    </div>
+  </section>
+
+  <section lang="tr" data-lang="tr" data-title="Gizlilik Politikası" hidden>
+    <p class="muted">Son güncelleme: 7 Kasım 2026</p>
+    <p>Rageborn, Aral Benli tarafından geliştirilen taktiksel bir kart düellosu oyunudur. Bu metin, oyunun bilgilerinizle ne yaptığını açıklar.</p>
+
+    <div class="panel tldr">
+      <h2>Kısaca</h2>
+      <table>
+        <tr><td>👤 Hesap</td><td>Yok. Size anonim bir oyuncu kimliği oluşturulur.</td></tr>
+        <tr><td>☁️ Bulut kayıt</td><td>Oyun ilerlemeniz, bu anonim kimlikle</td></tr>
+        <tr><td>⚔️ Pit League</td><td>Takımınız, desteniz ve üretilmiş bir ad (ör. Vex#4821)</td></tr>
+        <tr><td>📊 İstatistik ve çökmeler</td><td>Firebase Analytics ve Crashlytics</td></tr>
+        <tr><td>📺 Reklamlar</td><td>Google AdMob, gerektiği yerde izninizle</td></tr>
+        <tr><td>💳 Ödemeler</td><td>Google Play / App Store üzerinden</td></tr>
+      </table>
+      <p>Adınızı, e-posta adresinizi, rehberinizi, konumunuzu veya fotoğraflarınızı asla istemeyiz.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Bulut kayıt</h2>
+      <p>Oyunu ilk açtığınızda Google Firebase Authentication ile anonim bir hesap oluşturulur. İlerlemeniz (Glory, açılan kahramanlar ve kostümler, ustalık, kampanya yıldızları, Battle Pass ve lig ilerlemesi, desteler ve ayarlar) cihazınızda saklanır ve geri yüklenebilmesi, cihazlar arasında eşitlenebilmesi için bu anonim kimlikle Google Cloud Firestore'a kopyalanır. Bu kimlik adınız veya e-postanızla ilişkilendirilmez.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Pit League</h2>
+      <p>Diğer oyuncuların takımınızla savaşabilmesi için oyun bir "hayalet" yayımlar: takımınız, desteniz, kostümleriniz, unvanınız ve kart çerçeveniz, puanınız ve rastgele üretilmiş bir ad. Diğer oyuncular bunu rakip olarak ve sıralamada görür. Hayaletinize karşı yapılan dövüşlerin sonuçları, nasıl savunduğunu görebilmeniz için saklanır. Bir hayalette gerçek ad veya iletişim bilgisi hiçbir zaman yer almaz.</p>
+    </div>
+
+    <div class="panel">
+      <h2>İstatistikler ve çökme raporları</h2>
+      <p>Hangi ekranların ve modların kullanıldığını, oyuncuların nerede takıldığını anlamak için Google Firebase Analytics kullanırız. Ekran açılması, maç başlaması veya bitmesi, kahraman açılması, ödül alınması veya reklam izlenmesi gibi olaylar kaydedilir. Firebase ayrıca standart teknik verileri toplar: uygulama örneği kimliği, cihaz modeli, işletim sistemi ve uygulama sürümü, dil ve yaklaşık ülke.</p>
+      <p>Oyun çöktüğünde, düzeltebilmemiz için Firebase Crashlytics bir çökme raporu (cihaz durumu ve hata veren kod) gönderir.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Reklamlar</h2>
+      <p>Oyun, izlemeyi kendinizin seçtiği ödüllü reklamlar gösterir (ör. çift Glory veya ekstra Gauntlet canı); bunları Google AdMob sunar. AdMob, reklamları göstermek ve ölçmek için cihazınızın reklam kimliğini ve benzeri verileri kullanabilir. AEA, Birleşik Krallık ve İsviçre'de önce Google'ın izin mesajıyla onayınız istenir ve seçiminizi sonradan değiştirebilirsiniz. <b>No Ads</b> satın almak reklamları kaldırır.</p>
+      <p>Ana ekranda kendi diğer uygulamalarımızın tanıtımları da görünebilir. Bunlar kendi yapılandırmamızdan gelir ve reklam kimliği kullanmaz.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Geri bildirim</h2>
+      <p>Ayarlar → Feedback'ten bir özellik isteği veya hata bildirimi gönderirseniz, yazdıklarınızla birlikte yanıt vermemize yardımcı olan teknik bilgiler de bize ulaşır: uygulama sürümü, platform, cihaz modeli ve işletim sistemi sürümü, bir cihaz kimliği, dil, saat dilimi, ses ayarları, anonim oyuncu kimliğiniz, sahip olduğunuz satın alımlar, bir kurulum kimliği, yaklaşık ülkeniz ve hata bildirimlerinde ilerlemenizin kısa bir özeti. Bunlar yalnızca mesajınızı ele almak için kullanılır.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Satın alımlar</h2>
+      <p>Tüm ödemeler Google Play veya App Store üzerinden yapılır. Kart veya ödeme bilgileriniz bize hiçbir zaman ulaşmaz; yalnızca hangi ürünün alındığını öğreniriz, böylece onu açabiliriz.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Hizmet sağlayıcılar</h2>
+      <p>Google (Firebase, AdMob), Google Play ve Apple, verileri kendi koşulları altında bizim adımıza işler: <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>, <a href="https://firebase.google.com/support/privacy">Firebase gizlilik</a>, <a href="https://www.apple.com/tr/legal/privacy/">Apple Gizlilik Politikası</a>. Geri bildirimler bir Cloudflare Worker üzerinden destek posta kutumuza iletilir. Verilerinizi satmayız.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Çocuklar</h2>
+      <p>Rageborn 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek bilgi toplamayız. Bir çocuğun bize bilgi gönderdiğini düşünüyorsanız bize yazın, silelim.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Seçimleriniz ve verilerin silinmesi</h2>
+      <ul>
+        <li>Reklam izni, izin mesajından değiştirilebilir; kişiselleştirilmiş reklamlar cihaz ayarlarından da sınırlanabilir.</li>
+        <li>Oyunu kaldırmak, cihazda saklanan her şeyi siler.</li>
+        <li>Bulut kaydınızın, hayaletinizin ve istatistiklerinizin silinmesi için Oyuncu Kimliğinizle bize yazın (her geri bildirimle birlikte gönderilir; mesajınızdan da bulabiliriz). 30 gün içinde sileriz.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Değişiklikler ve iletişim</h2>
+      <p>Bu politika değişirse yeni sürüm yeni bir tarihle bu adreste yayımlanır.</p>
+      <a class="mail" href="mailto:support@aralbenli.com">✉ support@aralbenli.com</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Aral Benli · Rageborn · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></footer>
+</div>
+<script>
+  // The language comes from the URL hash (#tr / #en), then the device; English otherwise.
+  (function () {
+    var tabs = document.querySelectorAll('.tabs button');
+    var sections = document.querySelectorAll('section[data-lang]');
+    function show(lang) {
+      sections.forEach(function (s) { s.hidden = s.dataset.lang !== lang; if (!s.hidden) document.getElementById('subtitle').textContent = s.dataset.title; });
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', t.dataset.lang === lang); });
+      document.documentElement.lang = lang;
+    }
+    tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.dataset.lang); }); });
+    var hash = location.hash.replace('#', '');
+    var device = (navigator.language || 'en').slice(0, 2);
+    show(hash === 'tr' || hash === 'en' ? hash : device === 'tr' ? 'tr' : 'en');
+  })();
+</script>
+</body>
+</html>
